@@ -22,7 +22,7 @@ public class GameView extends SurfaceView implements Runnable, SurfaceHolder.Cal
     private Paint paint;
     private float screenX, screenY;
     private RectF ball, playerPaddle, aiPaddle;
-    private float ballSpeedX = 10f, ballSpeedY = 10f;
+    private float ballSpeedX = 40f, ballSpeedY = 40f;
     private float playerPaddleSpeed = 20f;
     private float aiPaddleSpeed;  // AI paddle speed limit
 
@@ -144,7 +144,7 @@ public class GameView extends SurfaceView implements Runnable, SurfaceHolder.Cal
 
     private void control() {
         try {
-            Thread.sleep(10); // Increase frame rate by reducing sleep time
+            Thread.sleep(1); // Increase frame rate by reducing sleep time
         } catch (InterruptedException e) {
             e.printStackTrace();
         }

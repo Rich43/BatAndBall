@@ -8,20 +8,21 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="AI Difficulty"
+        android:text="@string/ai_difficulty"
         android:textSize="18sp" />
 
     <SeekBar
         android:id="@+id/seekBar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:max="10" />
+        android:min="1"
+        android:max="40" />
 
     <TextView
         android:id="@+id/seekBarValue"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="5"
+        android:text="20"
         android:textSize="18sp"
         android:layout_marginTop="8dp" />
 
